@@ -31,15 +31,18 @@ do
 	read -p "Enter second string: " str2
  
 	if [ "$str1" == "$str2" ]; then
-		echo "Strings are equal"
-    else
-        echo "Strings are not equal"
-    fi
+	    echo "Strings are equal"
+        else
+            echo "Strings are not equal"
+        fi
 	;; 
 	3) 
-	echo "---verifying string---"
-	echo " "
-		
+	echo "---verifying string if has a sub string---"
+	STR='prathyush gopal'
+	SUB='gopal'
+	  if [[ "$STR" == *"$SUB"* ]]; then
+  	      echo "It's there."
+          fi		
 	;; 
 	4)echo " "
 	echo "---Exiting---"
